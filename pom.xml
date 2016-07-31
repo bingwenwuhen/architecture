@@ -85,11 +85,11 @@
             <artifactId>commons-pool</artifactId>
             <version>1.6</version>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>com.danga</groupId>
             <artifactId>memcached</artifactId>
             <version>2.6.6</version>
-        </dependency>
+        </dependency>-->
         <!-- servlet的jar -->
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -280,11 +280,11 @@
     </dependencies>
 
     <repositories>
-        <repository>
+        <!--<repository>
             <id>apache-repo</id>
             <name>apache Repository</name>
             <url>https://repository.apache.org/content/groups/public/</url>
-        </repository>
+        </repository>-->
         <repository>
             <id>travis-ci-repo</id>
             <name>travis-ci Repository</name>
