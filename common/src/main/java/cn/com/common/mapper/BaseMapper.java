@@ -13,7 +13,9 @@ public interface BaseMapper<M, QM> {
 
     void delete(Long id);
 
-    M getById(Long id);
+    M getByUuId(Long id);
+
+    M getByCustomerId(Long customerId);
 
     List<M> getByConditionPage(QM model);
 }

@@ -38,7 +38,7 @@ public class CustomerController {
 
     @RequestMapping(value = "toUpdate/{customerUuid}", method = RequestMethod.GET)
     public String toUpdate(@PathVariable("customerUuid") Long customerUuid, Model model) {
-        CustomerModel cm = customerService.getById(customerUuid);
+        CustomerModel cm = customerService.getByUuId(customerUuid);
         model.addAttribute("cm", cm);
         return "customer/add";
     }
@@ -51,7 +51,7 @@ public class CustomerController {
 
     @RequestMapping(value = "toDelete/{customerUuid}", method = RequestMethod.GET)
     public String toDelete(@PathVariable("customerUuid") Long customerUuid, Model model) {
-        CustomerModel cm = customerService.getById(customerUuid);
+        CustomerModel cm = customerService.getByUuId(customerUuid);
         model.addAttribute("cm", cm);
         return "customer/delete";
     }

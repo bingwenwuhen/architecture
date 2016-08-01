@@ -28,8 +28,12 @@ public class BaseService<M, QM extends BaseModel> implements IBaseService<M, QM>
         baseMapper.delete(id);
     }
 
-    public M getById(Long id) {
-        return (M) baseMapper.getById(id);
+    public M getByUuId(Long id) {
+        return (M) baseMapper.getByUuId(id);
+    }
+
+    public M getByCustomerId(Long customerId) {
+        return (M) baseMapper.getByCustomerId(customerId);
     }
 
     public Page<M> getByConditionPage(QM model) {

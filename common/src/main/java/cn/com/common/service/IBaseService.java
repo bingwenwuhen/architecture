@@ -17,7 +17,9 @@ public interface IBaseService<M, QM extends BaseModel> {
 
     void delete(Long id);
 
-    M getById(Long id);
+    M getByUuId(Long id);
+
+    M getByCustomerId(Long customerId);
 
     Page<M> getByConditionPage(QM model);
 }
