@@ -1,5 +1,6 @@
 package cn.com.vo;
 
+import cn.com.common.model.BaseModel;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
@@ -10,9 +11,7 @@ import lombok.ToString;
 @Data
 @EqualsAndHashCode
 @ToString
-public class CustomerModel {
-
-    private Long uuid;
+public class CustomerModel extends BaseModel{
 
     private String customerId;
 
