@@ -29,21 +29,27 @@
             <version>1.0-SNAPSHOT</version>
             <classifier>api</classifier>
         </dependency>
-        <!-- <dependency>
-           <groupId>cn.com</groupId>
-           <artifactId>cartmgr</artifactId>
-           <version>1.0-SNAPSHOT</version>
+        <dependency>
+            <groupId>cn.com</groupId>
+            <artifactId>cartmgr</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>jar</type>
+            <classifier>api</classifier>
        </dependency>
         <dependency>
-             <groupId>cn.com</groupId>
-             <artifactId>ordermgr</artifactId>
-             <version>1.0-SNAPSHOT</version>
+            <groupId>cn.com</groupId>
+            <artifactId>ordermgr</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>jar</type>
+            <classifier>api</classifier>
          </dependency>
          <dependency>
              <groupId>cn.com</groupId>
              <artifactId>customermgr</artifactId>
              <version>1.0-SNAPSHOT</version>
-         </dependency>-->
+             <type>jar</type>
+             <classifier>api</classifier>
+         </dependency>
     </dependencies>
 
     <build>
