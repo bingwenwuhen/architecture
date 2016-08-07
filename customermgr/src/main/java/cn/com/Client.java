@@ -1,8 +1,10 @@
 package cn.com;
 
+import cn.com.common.pageutil.Page;
 import cn.com.mapper.CustomerMapper;
 import cn.com.service.ICustomerService;
 import cn.com.vo.CustomerModel;
+import cn.com.vo.CustomerQueryModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -33,5 +35,14 @@ public class Client {
         model.setTrueName("zhangsan222");
         //client.customerMapper.create(model);
         client.customerService.create(model);
+        CustomerQueryModel model1 = new CustomerQueryModel();
+        model1.getPage().setNowPage(1);
+        model1.getPage().setPageShow(1);
+        Page<CustomerModel> p = client.customerService.getByConditionPage(model1);
+        System.out.println(p);
+
+        System.out.println("========================");
+        Page<CustomerModel> p1 = client.customerService.getByConditionPage(model1);
+        System.out.println(p1);
     }
 }

@@ -15,7 +15,7 @@ public interface BaseMapper<M, QM> {
 
     M getByUuId(Long id);
 
-    M getByCustomerId(Long customerId);
+    M getByCustomerId(String customerId);
 
     List<M> getByConditionPage(QM model);
 }

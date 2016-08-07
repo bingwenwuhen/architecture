@@ -7,9 +7,9 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <groupId>cn.com</groupId>
-    <artifactId>customermgr</artifactId>
+    <artifactId>front</artifactId>
     <packaging>war</packaging>
-    <name>customermgr</name>
+    <name>front </name>
     <url>http://maven.apache.org</url>
 
     <dependencies>
@@ -17,11 +17,37 @@
             <groupId>cn.com</groupId>
             <artifactId>common</artifactId>
         </dependency>
-
+         <dependency>
+              <groupId>cn.com</groupId>
+              <artifactId>goodsmgr</artifactId>
+              <version>1.0-SNAPSHOT</version>
+          </dependency>
+        <dependency>
+            <groupId>cn.com</groupId>
+            <artifactId>customermgr</artifactId>
+            <type>jar</type>
+            <version>1.0-SNAPSHOT</version>
+            <classifier>api</classifier>
+        </dependency>
+        <!-- <dependency>
+           <groupId>cn.com</groupId>
+           <artifactId>cartmgr</artifactId>
+           <version>1.0-SNAPSHOT</version>
+       </dependency>
+        <dependency>
+             <groupId>cn.com</groupId>
+             <artifactId>ordermgr</artifactId>
+             <version>1.0-SNAPSHOT</version>
+         </dependency>
+         <dependency>
+             <groupId>cn.com</groupId>
+             <artifactId>customermgr</artifactId>
+             <version>1.0-SNAPSHOT</version>
+         </dependency>-->
     </dependencies>
 
     <build>
-        <finalName>customermgr</finalName>
+        <finalName>front</finalName>
         <plugins>
             <plugin>
                 <groupId>org.mortbay.jetty</groupId>
@@ -34,30 +60,14 @@
                         <contextPath>/</contextPath>
                     </webAppConfig>
                     <connectors>
-                        <connector
-                                implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
-                            <port>9081</port>
+                        <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+                            <port>9080</port>
                             <maxIdleTime>60000</maxIdleTime>
                         </connector>
                     </connectors>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>my-jar</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                        <configuration>
-                            <classifier>api</classifier>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
+
         </plugins>
     </build>
 </project>

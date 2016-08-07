@@ -32,7 +32,7 @@ public class BaseService<M, QM extends BaseModel> implements IBaseService<M, QM>
         return (M) baseMapper.getByUuId(id);
     }
 
-    public M getByCustomerId(Long customerId) {
+    public M getByCustomerId(String customerId) {
         return (M) baseMapper.getByCustomerId(customerId);
     }
 

@@ -1,5 +1,6 @@
 package cn.com.form;
 
+import cn.com.common.web.BaseWebModel;
 import lombok.Data;
 import lombok.ToString;
 
@@ -8,12 +9,7 @@ import lombok.ToString;
  */
 @Data
 @ToString
-public class CustomerWebForm {
+public class CustomerWebForm extends BaseWebModel {
 
-    private String queryJsonStr = "";
-
-    private int nowPage = 1;
-
-    private int pageShow = 0;
 
 }
