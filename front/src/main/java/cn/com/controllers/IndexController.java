@@ -14,7 +14,7 @@ public class IndexController {
 
     @RequestMapping(value = "/toIndex", method = RequestMethod.GET)
     public String toIndex(Model model) {
-        return "";
+        return "index";
     }
 
 }

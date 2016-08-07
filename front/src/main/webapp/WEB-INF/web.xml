@@ -19,13 +19,13 @@
              org.springframework.web.context.ContextLoaderListener
          </listener-class>
      </listener>
-     
-     <listener>
-         <listener-class>
-             com.sishuok.architecture1.ordermgr.queue.QueueReceiver
-         </listener-class>
-     </listener>
-      
+     <!-- -->
+     <!--<listener>-->
+         <!--<listener-class>-->
+             <!--com.sishuok.architecture1.ordermgr.queue.QueueReceiver-->
+         <!--</listener-class>-->
+     <!--</listener>-->
+      <!-- -->
      <!-- Spring配置文件结束 -->
 
     <!-- 设置servlet编码开始 -->
