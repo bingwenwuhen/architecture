@@ -14,4 +14,14 @@ import java.util.List;
 public interface CustomerMapper extends BaseMapper<CustomerModel, CustomerQueryModel> {
 
     CustomerModel getByCustomerId(String customerId);
+
+    void create(CustomerModel model);
+
+    void update(CustomerModel model);
+
+    void delete(Long id);
+
+    CustomerModel getByUuId(Long id);
+
+    List<CustomerModel> getByConditionPage(CustomerQueryModel model);
 }
