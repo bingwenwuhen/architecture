@@ -19,7 +19,5 @@ public interface IBaseService<M, QM extends BaseModel> {
 
     M getByUuId(Long id);
 
-    M getByCustomerId(String customerId);
-
     Page<M> getByConditionPage(QM model);
 }

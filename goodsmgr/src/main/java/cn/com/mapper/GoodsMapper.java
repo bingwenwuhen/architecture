@@ -5,8 +5,6 @@ import cn.com.vo.GoodsModel;
 import cn.com.vo.GoodsQueryModel;
 import org.springframework.stereotype.Repository;
 
-
 @Repository
 public interface GoodsMapper extends BaseMapper<GoodsModel,GoodsQueryModel> {
-//	public Page<GoodsModel> getByCondition(GoodsQueryModel qm);
 }

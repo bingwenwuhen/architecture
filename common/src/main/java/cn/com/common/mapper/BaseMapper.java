@@ -1,10 +1,13 @@
 package cn.com.common.mapper;
 
+import org.springframework.stereotype.Repository;
+
 import java.util.List;
 
 /**
  * Created by Administrator on 2016/7/31.
  */
+@Repository
 public interface BaseMapper<M, QM> {
 
     void create(M model);
@@ -14,8 +17,6 @@ public interface BaseMapper<M, QM> {
     void delete(Long id);
 
     M getByUuId(Long id);
-
-    M getByCustomerId(String customerId);
 
     List<M> getByConditionPage(QM model);
 }

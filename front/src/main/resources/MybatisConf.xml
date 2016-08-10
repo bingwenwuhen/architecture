@@ -4,6 +4,8 @@
 	<typeAliases>
 		<typeAlias type="cn.com.vo.CustomerModel" alias="CM"/>
 		<typeAlias type="cn.com.vo.CustomerQueryModel" alias="CQM"/>
+		<typeAlias type="cn.com.vo.GoodsModel" alias="GM"/>
+		<typeAlias type="cn.com.vo.GoodsQueryModel" alias="GQM"/>
 	</typeAliases>
 	<plugins>
 		<plugin interceptor="cn.com.common.pageutil.PagePlugin">

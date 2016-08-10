@@ -13,5 +13,5 @@ import java.util.List;
 @Repository
 public interface CustomerMapper extends BaseMapper<CustomerModel, CustomerQueryModel> {
 
-
+    CustomerModel getByCustomerId(String customerId);
 }

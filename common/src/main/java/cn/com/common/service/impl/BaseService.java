@@ -32,10 +32,6 @@ public class BaseService<M, QM extends BaseModel> implements IBaseService<M, QM>
         return (M) baseMapper.getByUuId(id);
     }
 
-    public M getByCustomerId(String customerId) {
-        return (M) baseMapper.getByCustomerId(customerId);
-    }
-
     public Page<M> getByConditionPage(QM model) {
         List<M> list = baseMapper.getByConditionPage(model);
         model.getPage().setResult(list);

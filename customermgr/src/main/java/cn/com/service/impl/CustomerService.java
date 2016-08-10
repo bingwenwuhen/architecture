@@ -17,4 +17,7 @@ public class CustomerService extends BaseService<CustomerModel, CustomerQueryMod
     @Autowired
     private CustomerMapper customerMapper;
 
+    public CustomerModel getByCustomerId(String customerId) {
+        return customerMapper.getByCustomerId(customerId);
+    }
 }

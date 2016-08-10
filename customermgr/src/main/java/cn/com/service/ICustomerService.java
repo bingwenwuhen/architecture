@@ -8,4 +8,6 @@ import cn.com.vo.CustomerQueryModel;
  * Created by Administrator on 2016/7/31.
  */
 public interface ICustomerService extends IBaseService<CustomerModel, CustomerQueryModel> {
+
+     CustomerModel getByCustomerId(String customerId);
 }
