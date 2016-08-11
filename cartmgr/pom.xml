@@ -11,9 +11,14 @@
     <packaging>war</packaging>
     <name>cartmgr</name>
     <url>http://maven.apache.org</url>
-    <dependencies>
 
+    <dependencies>
+        <dependency>
+            <groupId>cn.com</groupId>
+            <artifactId>common</artifactId>
+        </dependency>
     </dependencies>
+
     <build>
         <finalName>cart</finalName>
         <plugins>
