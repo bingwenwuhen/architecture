@@ -1,8 +1,9 @@
-package cn.com.service;
+package cn.com.service.impl;
 
 
 import cn.com.common.pageutil.Page;
 import cn.com.mapper.CartMapper;
+import cn.com.service.ICartService;
 import cn.com.vo.CartModel;
 import cn.com.vo.CartQueryModel;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,8 +33,8 @@ public class CartService implements ICartService {
 		return cartMapper.getByUuId(id);
 	}
 
-//	public Page<CartModel> getByConditionPage(CartQueryModel model) {
-//		model.getPage().setResult(cartMapper.getByConditionPage(model));
-//		return model.getPage();
-//	}
+	public Page<CartModel> getByConditionPage(CartQueryModel model) {
+		model.getPage().setResult(cartMapper.getByConditionPage(model));
+		return model.getPage();
+	}
 }

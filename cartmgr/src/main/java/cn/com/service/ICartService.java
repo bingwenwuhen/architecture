@@ -1,9 +1,9 @@
 package cn.com.service;
 
 
+import cn.com.common.pageutil.Page;
 import cn.com.vo.CartModel;
 import cn.com.vo.CartQueryModel;
-import org.springframework.data.domain.Page;
 
 public interface ICartService {
 
@@ -15,7 +15,7 @@ public interface ICartService {
 
     CartModel getByUuId(Long id);
 
-    //Page<CartModel> getByConditionPage(CartQueryModel model);
+    Page<CartModel> getByConditionPage(CartQueryModel model);
 	
 }
 
