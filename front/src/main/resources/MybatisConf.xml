@@ -6,6 +6,8 @@
 		<typeAlias type="cn.com.vo.CustomerQueryModel" alias="CQM"/>
 		<typeAlias type="cn.com.vo.GoodsModel" alias="GM"/>
 		<typeAlias type="cn.com.vo.GoodsQueryModel" alias="GQM"/>
+		<typeAlias type="cn.com.vo.CartModel" alias="CartM"/>
+		<typeAlias type="cn.com.vo.CustomerQueryModel" alias="CartQM"/>
 	</typeAliases>
 	<plugins>
 		<plugin interceptor="cn.com.common.pageutil.PagePlugin">
