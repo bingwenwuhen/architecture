@@ -14,7 +14,7 @@
      	delete from tbl_goods where uuid=#{uuid}
      </delete>
      
-    <select id="getByUuid" parameterType="int" resultType="GM">  
+    <select id="getByUuId" parameterType="int" resultType="GM">
         select * from tbl_goods where uuid=#{uuid}
     </select>  
     <select id="getByConditionPage" parameterType="GQM" resultType="GM">  

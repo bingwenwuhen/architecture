@@ -15,7 +15,7 @@ public interface GoodsMapper {
 
     void delete(Long id);
 
-    GoodsQueryModel getByUuId(Long id);
+    GoodsModel getByUuId(Long id);
 
     List<GoodsModel> getByConditionPage(GoodsQueryModel model);
 
